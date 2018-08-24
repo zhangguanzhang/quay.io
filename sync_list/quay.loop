@@ -1,5 +1,3 @@
-wire
-calico
 prometheus
 outline
 weaveworks
@@ -9,3 +7,5 @@ replicated
 kubernetes-service-catalog
 3scale
 coreos
+wire
+calico
