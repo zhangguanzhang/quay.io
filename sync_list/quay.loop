@@ -1,4 +1,3 @@
-prometheus
 outline
 weaveworks
 hellofresh
@@ -9,3 +8,4 @@ kubernetes-service-catalog
 coreos
 wire
 calico
+prometheus
