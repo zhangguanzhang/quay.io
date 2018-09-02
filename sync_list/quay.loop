@@ -1,6 +1,3 @@
-coreos
-wire
-calico
 prometheus
 outline
 weaveworks
@@ -9,3 +6,6 @@ kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
 3scale
+coreos
+wire
+calico
