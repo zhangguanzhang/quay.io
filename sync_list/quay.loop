@@ -1,11 +1,11 @@
-wire
-calico
-prometheus
-outline
-weaveworks
 hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
 3scale
 coreos
+wire
+calico
+prometheus
+outline
+weaveworks
