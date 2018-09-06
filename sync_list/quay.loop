@@ -1,4 +1,3 @@
-replicated
 kubernetes-service-catalog
 3scale
 coreos
@@ -9,3 +8,4 @@ outline
 weaveworks
 hellofresh
 kubernetes-ingress-controller
+replicated
