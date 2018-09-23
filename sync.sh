@@ -126,18 +126,19 @@ trvis_live(){
 }
 
 sync_domain_repo(){
-    path=$1
+    path=${1%/}
     while read name tag;do
         img_name=$( sed 's#/#'"$interval"'#g'<<<$name )
         trvis_live
+        [[ $(( (`date +%s` - start_time)/60 )) -gt 46 ]] && git_commit
         read -u5
         {
-            [[  -n "$tag" && "$( hub_tag_exist $img_name $tag )" == null ]] && rm -f $name/$tag
+            echo $img_name $tag
+            [ "$( hub_tag_exist $img_name $tag )" == null ] && rm -f $name/$tag
             echo >&5
         }&
     done < <( find $path/ -type f | sed 's#/# #3' )
     wait
-    git_commit
 }
 
 
@@ -147,8 +148,22 @@ main(){
     live_start_time=$(date +%s)
     read sync_time < sync_check
     [ $(( (`date +%s` - sync_time)/3600 )) -ge 6 ] && {
-        sync_domain_repo quay.io
+        [ ! -f sync_list_ns ] && ls quay.io > sync_list_ns
+        allns=(`xargs -n1 < sync_list_ns`)
+
+        for ns in $allns;do 
+            [ ! -f sync_list_name ] && ls quay.io/$ns > sync_list_name
+            allname=(`xargs -n1 < sync_list_name`)
+            for name in $allname;do 
+                sync_domain_repo quay.io/$ns/$name
+                sed -i '/'$name'/d' sync_list_name
+            done
+            rm -f sync_list_name
+            sed -i '/'$ns'/d' sync_list_ns
+        done
+        rm -f sync_list_ns
         date +%s > sync_check
+        git_commit
     }
     exec 5>&-;exec 5<&-
 
