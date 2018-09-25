@@ -157,10 +157,10 @@ main(){
             for name in $allname;do 
                 line=$( grep -Pon '\Q'"$name"'\E' sync_list_name | cut -d':' -f1 )
                 sync_domain_repo quay.io/$ns/$name
-                sed -i '/'$name'/d' sync_list_name
+                sed -i '/'$line'/d' sync_list_name
             done
             rm -f sync_list_name
-            sed -i '/'$line'/d' sync_list_ns
+            sed -i '/'$ns'/d' sync_list_ns
         done
         rm -f sync_list_ns
         date +%s > sync_check
