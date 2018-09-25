@@ -127,6 +127,7 @@ trvis_live(){
 
 sync_domain_repo(){
     path=${1%/}
+    local name tag
     while read name tag;do
         img_name=$( sed 's#/#'"$interval"'#g'<<<$name )
         trvis_live
@@ -137,6 +138,7 @@ sync_domain_repo(){
         }&
     done < <( find $path/ -type f | sed 's#/# #3' )
     wait
+    git_commit
 }
 
 
@@ -154,12 +156,11 @@ main(){
             [ ! -f sync_list_name ] && ls quay.io/$ns > sync_list_name
             allname=(`xargs -n1 < sync_list_name`)
             for name in ${allname[@]};do 
-                line=$( grep -Pon '^\Q'"$name"'\E$' sync_list_name | cut -d':' -f1 )
                 sync_domain_repo quay.io/$ns/$name
-                sed -i '/'$line'/d' sync_list_name
+                perl  -i -lne 'print if $_ ne "'$name'"' sync_list_name
             done
             rm -f sync_list_name
-            sed -i '/'$ns'/d' sync_list_ns
+            perl  -i -lne 'print if $_ ne "'$ns'"' sync_list_ns
         done
         rm -f sync_list_ns
         date +%s > sync_check
