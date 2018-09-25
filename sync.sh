@@ -151,13 +151,12 @@ main(){
         [ ! -f sync_list_ns ] && ls quay.io > sync_list_ns
         allns=(`xargs -n1 < sync_list_ns`)
 
-        for ns in $allns;do 
+        for ns in ${allns[@]};do 
             [ ! -f sync_list_name ] && ls quay.io/$ns > sync_list_name
             allname=(`xargs -n1 < sync_list_name`)
-            for name in $allname;do 
-                line=$( grep -Pon '\Q'"$name"'\E' sync_list_name | cut -d':' -f1 )
+            for name in ${allname[@]};do 
                 sync_domain_repo quay.io/$ns/$name
-                sed -i '/'$line'/d' sync_list_name
+                sed -i '/'$name'/d' sync_list_name
             done
             rm -f sync_list_name
             sed -i '/'$ns'/d' sync_list_ns
