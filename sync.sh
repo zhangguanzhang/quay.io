@@ -130,7 +130,6 @@ sync_domain_repo(){
     while read name tag;do
         img_name=$( sed 's#/#'"$interval"'#g'<<<$name )
         trvis_live
-        [[ $(( (`date +%s` - start_time)/60 )) -gt 46 ]] && git_commit
         read -u5
         {
             echo $img_name $tag
@@ -143,6 +142,7 @@ sync_domain_repo(){
 
 
 main(){
+    [ -z "$start_time" ] && start_time=$(date +%s)
     git_init
     Multi_process_init $(( max_process * 5 ))
     live_start_time=$(date +%s)
@@ -155,11 +155,12 @@ main(){
             [ ! -f sync_list_name ] && ls quay.io/$ns > sync_list_name
             allname=(`xargs -n1 < sync_list_name`)
             for name in $allname;do 
+                line=$( grep -Pon '\Q'"$name"'\E' sync_list_name | cut -d':' -f1 )
                 sync_domain_repo quay.io/$ns/$name
                 sed -i '/'$name'/d' sync_list_name
             done
             rm -f sync_list_name
-            sed -i '/'$ns'/d' sync_list_ns
+            sed -i '/'$line'/d' sync_list_ns
         done
         rm -f sync_list_ns
         date +%s > sync_check
