@@ -1,9 +1,0 @@
-builder
-chronograf
-flux
-ifqld
-influx
-influxdb
-k8s-kapacitor-autoscale
-pigeon
-prometheus-operator
