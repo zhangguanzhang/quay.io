@@ -1,4 +1,3 @@
-menus-service-ci
 molecule-docker
 nginx-proxy
 ordering-tool-api-tests
