@@ -1,4 +1,3 @@
-apiserver-arm
 apiserver-arm64
 apiserver-ppc64le
 apiserver-s390x
