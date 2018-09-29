@@ -1,1 +1,9 @@
-zetcd
+abs-nfs-test
+dotmesh-billing
+dotmesh-chromedriver
+dotmesh-communications
+dotmesh-dynamic-provisioner
+dotmesh-etcd-backup
+dotmesh-frontend
+dotmesh-frontend-test-runner
+dotmesh-gateway
