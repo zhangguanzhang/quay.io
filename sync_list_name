@@ -1,4 +1,3 @@
-pod-proxy
 postgres
 prometheus
 prometheus-alertmanager-test-webhook
