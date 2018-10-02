@@ -1,4 +1,3 @@
-prometheus
 outline
 weaveworks
 hellofresh
@@ -13,3 +12,4 @@ spinnaker
 coreos
 wire
 calico
+prometheus
