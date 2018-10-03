@@ -1,3 +1,7 @@
+dotmesh
+external_storage
+spinnaker
+coreos
 wire
 calico
 prometheus
@@ -9,7 +13,3 @@ replicated
 kubernetes-service-catalog
 3scale
 influxdb
-dotmesh
-external_storage
-spinnaker
-coreos
