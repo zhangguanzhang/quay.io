@@ -1,4 +1,3 @@
-spinnaker
 coreos
 wire
 calico
@@ -13,3 +12,4 @@ kubernetes-service-catalog
 influxdb
 dotmesh
 external_storage
+spinnaker
