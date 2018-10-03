@@ -1,0 +1,14 @@
+scm-concourse-file-checker-node
+scm-concourse-git-composer
+scm-concourse-git-glide
+scm-concourse-helper-shell
+scm-concourse-pip
+scm-concourse-pip-pr
+scm-concourse-pr-composer
+scm-concourse-pr-glide
+scm-concourse-semver
+semver-resource-depth
+slack-notification-resource
+strider-docker-spark
+test
+ubuntu
