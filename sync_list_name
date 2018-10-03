@@ -1,4 +1,3 @@
-memcached-exporter
 mysqld-exporter
 node-exporter
 prometheus
