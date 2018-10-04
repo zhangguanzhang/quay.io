@@ -1,4 +1,3 @@
-hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
@@ -13,3 +12,4 @@ calico
 prometheus
 outline
 weaveworks
+hellofresh
