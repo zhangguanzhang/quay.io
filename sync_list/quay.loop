@@ -1,3 +1,4 @@
+coreos
 wire
 calico
 prometheus
@@ -12,4 +13,3 @@ influxdb
 dotmesh
 external_storage
 spinnaker
-coreos
