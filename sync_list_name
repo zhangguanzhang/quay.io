@@ -1,4 +1,3 @@
-build-haskell
 build-tmp-public
 consul-sidekick
 cortex
