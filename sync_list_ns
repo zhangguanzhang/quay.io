@@ -1,4 +1,3 @@
-external_storage
 hellofresh
 influxdb
 kubernetes-ingress-controller
