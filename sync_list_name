@@ -1,4 +1,3 @@
-node-exporter
 prometheus
 pushgateway
 snmp-exporter
