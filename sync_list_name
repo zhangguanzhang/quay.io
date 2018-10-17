@@ -1,9 +1,0 @@
-local-volume-provisioner
-local-volume-provisioner-bootstrap
-local-volume-update-pv-to-beta
-nfs-client-provisioner
-nfs-client-provisioner-arm
-openebs-provisioner
-rbd-provisioner
-snapshot-controller
-snapshot-provisioner
