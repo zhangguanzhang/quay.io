@@ -1,4 +1,3 @@
-alertmanager
 blackbox-exporter
 busybox
 collectd-exporter
