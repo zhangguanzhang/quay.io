@@ -1,4 +1,3 @@
-concourse-vault
 delete-old-namespaces
 dind
 docker-docker
