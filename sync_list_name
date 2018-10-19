@@ -1,4 +1,3 @@
-docker-php-fpm-ci
 docker-protoc
 docker-python-ci
 docker-qa-ci
