@@ -1,4 +1,3 @@
-docker-python-ci
 docker-qa-ci
 docker-raml2html
 docker-sonar-scanner-php
