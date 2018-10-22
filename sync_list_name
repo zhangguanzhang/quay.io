@@ -1,4 +1,3 @@
-prometheus
 prometheus-alertmanager-test-webhook
 prometheus-config-reloader
 prometheus-config-reloader-dev
