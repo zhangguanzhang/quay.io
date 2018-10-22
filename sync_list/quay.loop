@@ -1,3 +1,10 @@
+coreos
+wire
+calico
+prometheus
+outline
+weaveworks
+hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
@@ -6,10 +13,3 @@ influxdb
 dotmesh
 external_storage
 spinnaker
-coreos
-wire
-calico
-prometheus
-outline
-weaveworks
-hellofresh
