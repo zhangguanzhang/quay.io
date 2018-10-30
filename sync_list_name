@@ -1,0 +1,7 @@
+replicated
+replicated-agent
+replicated-docs
+replicated-hostpath-provisioner
+replicated-operator
+replicated-sidecar-controller
+replicated-ui
