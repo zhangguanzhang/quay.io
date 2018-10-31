@@ -1,1 +1,16 @@
-shadowbox
+alertmanager
+blackbox-exporter
+busybox
+collectd-exporter
+consul-exporter
+golang-builder
+graphite-exporter
+haproxy-exporter
+influxdb-exporter
+memcached-exporter
+mysqld-exporter
+node-exporter
+prometheus
+pushgateway
+snmp-exporter
+statsd-exporter
