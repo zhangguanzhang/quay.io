@@ -1,4 +1,3 @@
-busybox
 collectd-exporter
 consul-exporter
 golang-builder
