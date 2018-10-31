@@ -1,4 +1,3 @@
-cmd
 docker-packages
 k8s-cni
 k8s-images-common
