@@ -1,4 +1,3 @@
-consul-exporter
 golang-builder
 graphite-exporter
 haproxy-exporter
