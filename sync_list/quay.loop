@@ -1,4 +1,3 @@
-replicated
 kubernetes-service-catalog
 3scale
 influxdb
@@ -13,3 +12,4 @@ outline
 weaveworks
 hellofresh
 kubernetes-ingress-controller
+replicated
