@@ -1,4 +1,3 @@
-collectd-exporter
 consul-exporter
 golang-builder
 graphite-exporter
