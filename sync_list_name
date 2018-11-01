@@ -1,4 +1,3 @@
-iscsi-controller
 local-volume-provisioner
 local-volume-provisioner-bootstrap
 local-volume-update-pv-to-beta
