@@ -1,3 +1,7 @@
+hellofresh
+kubernetes-ingress-controller
+replicated
+kubernetes-service-catalog
 3scale
 influxdb
 dotmesh
@@ -9,7 +13,3 @@ calico
 prometheus
 outline
 weaveworks
-hellofresh
-kubernetes-ingress-controller
-replicated
-kubernetes-service-catalog
