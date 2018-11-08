@@ -1,4 +1,3 @@
-calico
 prometheus
 outline
 weaveworks
@@ -13,3 +12,4 @@ external_storage
 spinnaker
 coreos
 wire
+calico
