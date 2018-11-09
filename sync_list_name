@@ -1,4 +1,3 @@
-local-volume-update-pv-to-beta
 nfs-client-provisioner
 nfs-client-provisioner-arm
 openebs-provisioner
