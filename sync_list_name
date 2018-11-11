@@ -1,4 +1,3 @@
-build-image
 controller-manager
 controller-manager-amd64
 controller-manager-arm
