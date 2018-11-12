@@ -1,4 +1,3 @@
-graphite-exporter
 haproxy-exporter
 influxdb-exporter
 memcached-exporter
