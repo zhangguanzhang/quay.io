@@ -1,4 +1,3 @@
-haproxy-exporter
 influxdb-exporter
 memcached-exporter
 mysqld-exporter
