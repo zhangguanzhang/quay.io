@@ -1,4 +1,3 @@
-prometheus
 pushgateway
 snmp-exporter
 statsd-exporter
