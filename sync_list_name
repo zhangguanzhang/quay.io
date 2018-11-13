@@ -1,1 +1,13 @@
-vault-mutator
+ansible
+athensproxy
+builder
+chronograf
+dind
+flux
+ifqld
+influx
+influxdb
+k8s-kapacitor-autoscale
+pigeon
+prometheus-operator
+telegraf-ci
