@@ -1,3 +1,8 @@
+wire
+calico
+prometheus
+outline
+weaveworks
 hellofresh
 kubernetes-ingress-controller
 replicated
@@ -8,8 +13,3 @@ dotmesh
 external_storage
 spinnaker
 coreos
-wire
-calico
-prometheus
-outline
-weaveworks
