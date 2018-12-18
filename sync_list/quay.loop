@@ -1,4 +1,3 @@
-weaveworks
 hellofresh
 kubernetes-ingress-controller
 replicated
@@ -13,3 +12,4 @@ wire
 calico
 prometheus
 outline
+weaveworks
