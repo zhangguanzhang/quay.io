@@ -1,3 +1,10 @@
+jetstack
+uswitch
+factory2
+ucsc_cgl
+helmpack
+openshift
+kubernetes_incubator
 coreos
 wire
 calico
@@ -13,11 +20,3 @@ influxdb
 dotmesh
 external_storage
 spinnaker
-datawire
-jetstack
-uswitch
-factory2
-ucsc_cgl
-helmpack
-openshift
-kubernetes_incubator
