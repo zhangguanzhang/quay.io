@@ -1,3 +1,6 @@
+prometheus
+outline
+weaveworks
 hellofresh
 kubernetes-ingress-controller
 replicated
@@ -17,6 +20,3 @@ kubernetes_incubator
 coreos
 wire
 calico
-prometheus
-outline
-weaveworks
