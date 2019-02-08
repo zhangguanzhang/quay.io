@@ -1,4 +1,3 @@
-spinnaker
 jetstack
 uswitch
 factory2
@@ -21,3 +20,4 @@ kubernetes-service-catalog
 influxdb
 dotmesh
 external_storage
+spinnaker
