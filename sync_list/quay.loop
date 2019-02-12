@@ -1,4 +1,3 @@
-ucsc_cgl
 helmpack
 openshift
 kubernetes_incubator
@@ -21,3 +20,4 @@ spinnaker
 jetstack
 uswitch
 factory2
+ucsc_cgl
