@@ -1,4 +1,3 @@
-hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
@@ -21,3 +20,4 @@ prometheus
 outline
 weaveworks
 munnerz
+hellofresh
