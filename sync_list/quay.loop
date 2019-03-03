@@ -1,3 +1,5 @@
+jetstack
+uswitch
 factory2
 ucsc_cgl
 helmpack
@@ -19,5 +21,3 @@ influxdb
 dotmesh
 external_storage
 spinnaker
-jetstack
-uswitch
