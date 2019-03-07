@@ -1,3 +1,5 @@
+3scale
+influxdb
 dotmesh
 external_storage
 spinnaker
@@ -19,5 +21,3 @@ hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
-3scale
-influxdb
