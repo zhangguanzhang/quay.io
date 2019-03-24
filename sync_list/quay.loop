@@ -1,3 +1,9 @@
+dotmesh
+external_storage
+spinnaker
+jetstack
+uswitch
+factory2
 ucsc_cgl
 helmpack
 openshift
@@ -15,9 +21,3 @@ replicated
 kubernetes-service-catalog
 3scale
 influxdb
-dotmesh
-external_storage
-spinnaker
-jetstack
-uswitch
-factory2
