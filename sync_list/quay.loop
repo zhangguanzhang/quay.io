@@ -1,4 +1,3 @@
-prometheus
 outline
 weaveworks
 munnerz
@@ -21,3 +20,4 @@ kubernetes_incubator
 coreos
 wire
 calico
+prometheus
