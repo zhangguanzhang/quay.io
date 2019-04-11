@@ -1,3 +1,7 @@
+coreos
+wire
+calico
+prometheus
 outline
 weaveworks
 munnerz
@@ -17,7 +21,3 @@ ucsc_cgl
 helmpack
 openshift
 kubernetes_incubator
-coreos
-wire
-calico
-prometheus
