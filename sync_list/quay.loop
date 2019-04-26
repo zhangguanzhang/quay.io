@@ -1,3 +1,7 @@
+wire
+calico
+prometheus
+outline
 weaveworks
 munnerz
 hellofresh
@@ -17,7 +21,3 @@ helmpack
 openshift
 kubernetes_incubator
 coreos
-wire
-calico
-prometheus
-outline
