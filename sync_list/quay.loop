@@ -1,4 +1,3 @@
-calico
 prometheus
 outline
 weaveworks
@@ -21,3 +20,4 @@ openshift
 kubernetes_incubator
 coreos
 wire
+calico
