@@ -1,3 +1,13 @@
+jetstack
+uswitch
+factory2
+ucsc_cgl
+helmpack
+openshift
+kubernetes_incubator
+coreos
+wire
+calico
 prometheus
 outline
 weaveworks
@@ -11,13 +21,3 @@ influxdb
 dotmesh
 external_storage
 spinnaker
-jetstack
-uswitch
-factory2
-ucsc_cgl
-helmpack
-openshift
-kubernetes_incubator
-coreos
-wire
-calico
