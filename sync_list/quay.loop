@@ -1,11 +1,3 @@
-coreos
-wire
-calico
-prometheus
-outline
-weaveworks
-munnerz
-hellofresh
 kubernetes-ingress-controller
 replicated
 kubernetes-service-catalog
@@ -21,3 +13,11 @@ ucsc_cgl
 helmpack
 openshift
 kubernetes_incubator
+coreos
+wire
+calico
+prometheus
+outline
+weaveworks
+munnerz
+hellofresh
