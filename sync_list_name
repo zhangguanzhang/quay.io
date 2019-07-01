@@ -1,9 +1,0 @@
-prometheus-linux-arm64
-prometheus-linux-armv7
-pushgateway
-pushgateway-linux-amd64
-snmp-exporter
-snmp-exporter-linux-amd64
-snmp-generator
-statsd-exporter
-statsd-exporter-linux-amd64
