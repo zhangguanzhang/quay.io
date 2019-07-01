@@ -1,4 +1,3 @@
-consul-exporter
 consul-exporter-linux-amd64
 golang-builder
 graphite-exporter
