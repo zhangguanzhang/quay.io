@@ -1,4 +1,3 @@
-alertmanager-linux-amd64
 alertmanager-linux-arm64
 alertmanager-linux-armv7
 blackbox-exporter
