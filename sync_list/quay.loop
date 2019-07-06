@@ -1,4 +1,3 @@
-factory2
 ucsc_cgl
 helmpack
 openshift
@@ -21,3 +20,4 @@ external_storage
 spinnaker
 jetstack
 uswitch
+factory2
