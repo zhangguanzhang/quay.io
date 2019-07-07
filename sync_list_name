@@ -1,4 +1,3 @@
-origin-cluster-version-operator
 origin-configmap-reload
 origin-configmap-reloader
 origin-configure-alertmanager-operator
