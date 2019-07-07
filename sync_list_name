@@ -1,4 +1,3 @@
-origin-cluster-openshift-apiserver-operator
 origin-cluster-openshift-controller-manager-operator
 origin-cluster-operator
 origin-cluster-operator-ansible
