@@ -1,4 +1,3 @@
-origin-cluster-controller
 origin-cluster-dns-operator
 origin-cluster-etcd-operator
 origin-cluster-image-registry-operator
