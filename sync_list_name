@@ -1,4 +1,3 @@
-origin-docker-builder
 origin-docker-registry
 origin-egress-dns-proxy
 origin-egress-http-proxy
