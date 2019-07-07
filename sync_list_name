@@ -1,4 +1,3 @@
-origin-egress-router
 origin-elasticsearch-operator
 origin-etcd
 origin-etcd-quorum-guard
