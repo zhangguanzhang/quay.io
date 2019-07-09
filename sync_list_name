@@ -1,4 +1,3 @@
-docker-php5-ci
 docker-php-ci
 docker-php-fpm-ci
 docker-protoc
