@@ -1,4 +1,3 @@
-ci-packer
 ci-php56
 ci-terraform
 colossal
