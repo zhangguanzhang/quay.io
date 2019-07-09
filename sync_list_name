@@ -1,4 +1,3 @@
-consul-exporter-linux-amd64
 consul-exporter-linux-arm64
 consul-exporter-linux-armv7
 golang-builder
