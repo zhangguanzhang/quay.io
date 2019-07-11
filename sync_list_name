@@ -1,4 +1,3 @@
-cert-manager-controller
 cert-manager-controller-amd64
 cert-manager-webhook-amd64
 cloud-sdk
