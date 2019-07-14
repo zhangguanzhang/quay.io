@@ -1,4 +1,3 @@
-cert-manager-controller-arm
 cert-manager-controller-arm64
 cert-manager-ingress-shim
 cert-manager-webhook
