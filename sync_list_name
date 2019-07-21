@@ -1,4 +1,3 @@
-origin-service-ca-operator
 origin-service-catalog
 origin-service-serving-cert-signer
 origin-setup-etcd-environment
