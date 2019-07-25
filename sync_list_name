@@ -1,0 +1,14 @@
+helm-operator
+jaeger-es-cleaner
+jaeger-query
+kubediff
+kured
+launcher-agent
+launcher-service
+prom-aggregation-gateway
+prometheus_sql_exporter
+scope
+sidecar
+test-exporter
+watch
+wks
