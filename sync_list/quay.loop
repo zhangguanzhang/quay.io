@@ -1,3 +1,13 @@
+spinnaker
+jetstack
+uswitch
+factory2
+ucsc_cgl
+helmpack
+openshift
+kubernetes_incubator
+coreos
+wire
 calico
 prometheus
 outline
@@ -12,13 +22,3 @@ fluentd_elasticsearch
 influxdb
 dotmesh
 external_storage
-spinnaker
-jetstack
-uswitch
-factory2
-ucsc_cgl
-helmpack
-openshift
-kubernetes_incubator
-coreos
-wire
