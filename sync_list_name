@@ -1,9 +1,0 @@
-navigator-pilot-cassandra
-navigator-pilot-elasticsearch
-nginx-autoreload
-oauth2-proxy
-php-fpm-autoreload
-ubuntu-nsenter
-vault-helper
-vault-sidekick
-vault-unsealer
