@@ -1,15 +1,3 @@
-cargohold
-cargohold-integration
-cargohold-intermediate
-cluster-proportional-autoscaler-amd64
-defaultbackend
-docker2aci
-duplicate-id-linter
-fastlane
-galley
-galley2
-galley-integration
-galley-intermediate
 galley-journaler
 galley-schema
 gundeck
