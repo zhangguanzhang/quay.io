@@ -1,4 +1,3 @@
-origin-cluster-image-registry-operator
 origin-cluster-ingress-operator
 origin-cluster-kube-apiserver-operator
 origin-cluster-kube-controller-manager-operator
