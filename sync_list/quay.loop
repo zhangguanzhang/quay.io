@@ -1,3 +1,6 @@
+kubernetes-service-catalog
+3scale
+fluentd_elasticsearch
 influxdb
 dotmesh
 external_storage
@@ -19,6 +22,3 @@ munnerz
 hellofresh
 kubernetes-ingress-controller
 replicated
-kubernetes-service-catalog
-3scale
-fluentd_elasticsearch
