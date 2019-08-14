@@ -1,4 +1,3 @@
-kube-etcd-signer-server
 kube-lego
 kube-rbac-proxy
 kubernetes-fluentd
