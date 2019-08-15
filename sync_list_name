@@ -1,4 +1,3 @@
-directory-sync
 discovery.etcd.io
 dnsmasq
 ec2-tags-reader
