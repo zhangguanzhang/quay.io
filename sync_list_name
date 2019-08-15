@@ -1,4 +1,3 @@
-etcd_discovery_purge
 etcd-git
 etcd-operator
 etcd-operator-dev
