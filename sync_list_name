@@ -1,4 +1,3 @@
-memcached-exporter
 memcached-exporter-linux-amd64
 memcached-exporter-linux-arm64
 memcached-exporter-linux-armv7
