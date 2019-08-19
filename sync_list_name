@@ -1,1 +1,13 @@
-statsd-exporter-linux-armv7
+cmd
+docker-packages
+k8s-cni
+k8s-images-common
+k8s-images-control
+k8s-packages
+replicated
+replicated-agent
+replicated-docs
+replicated-hostpath-provisioner
+replicated-operator
+replicated-sidecar-controller
+replicated-ui
