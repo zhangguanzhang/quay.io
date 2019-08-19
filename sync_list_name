@@ -1,4 +1,3 @@
-cluster-api-provider-aws
 cluster-api-provider-libvirt
 cluster-api-provider-openstack
 cluster-monitoring-operator
