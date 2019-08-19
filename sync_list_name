@@ -1,4 +1,3 @@
-node-exporter-linux-arm64
 node-exporter-linux-armv7
 node-exporter-linux-ppc64le
 prom2json
