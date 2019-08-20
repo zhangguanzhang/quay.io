@@ -1,4 +1,3 @@
-glusterblock-provisioner
 glusterfile-provisioner
 glusterfs-simple-provisioner
 iscsi-controller
