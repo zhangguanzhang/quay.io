@@ -1,4 +1,3 @@
-kube-controller-manager
 kube-proxy
 kubernetes-dashboard-amd64
 kube-scheduler
