@@ -1,4 +1,3 @@
-origin-kube-proxy
 origin-kube-rbac-proxy
 origin-kube-state-metrics
 origin-kuryr-cni
