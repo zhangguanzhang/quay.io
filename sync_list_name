@@ -1,4 +1,3 @@
-origin-keepalived-ipfailover
 origin-kube-client-agent
 origin-kube-etcd-signer-server
 origin-kubemark-machine-controllers
