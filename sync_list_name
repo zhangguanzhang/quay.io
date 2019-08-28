@@ -1,4 +1,3 @@
-flex-provisioner
 glusterblock-provisioner
 glusterfile-provisioner
 glusterfs-simple-provisioner
