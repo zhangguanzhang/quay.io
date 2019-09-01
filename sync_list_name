@@ -1,4 +1,3 @@
-navigator-apiserver
 navigator-controller
 navigator-pilot-cassandra
 navigator-pilot-elasticsearch
