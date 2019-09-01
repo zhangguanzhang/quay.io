@@ -1,4 +1,3 @@
-init-k8s-vault-secrets
 janus
 janus-dashboard
 k8s-kubectl
