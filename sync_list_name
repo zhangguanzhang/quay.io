@@ -1,4 +1,3 @@
-build-haskell
 build-tmp-public
 compare-revisions
 consul-sidekick
