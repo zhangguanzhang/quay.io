@@ -1,4 +1,3 @@
-delete-old-ahoy-mongo-dbs
 delete-old-namespaces
 diffy
 dind
