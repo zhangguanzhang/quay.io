@@ -1,3 +1,4 @@
+wire
 calico
 prometheus
 outline
@@ -21,4 +22,3 @@ helmpack
 openshift
 kubernetes_incubator
 coreos
-wire
