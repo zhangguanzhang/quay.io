@@ -1,4 +1,3 @@
-service-catalog-arm64
 service-catalog-ppc64le
 service-catalog-s390x
 test-broker
