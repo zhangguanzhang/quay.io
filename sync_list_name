@@ -1,4 +1,3 @@
-ec2-tags-reader
 elb-presence
 etcd
 etcd_discovery_purge
