@@ -1,4 +1,3 @@
-hf-policy-webhook
 hf-rsyslog-receiver
 hf-tlsmon
 init-k8s-vault-secrets
