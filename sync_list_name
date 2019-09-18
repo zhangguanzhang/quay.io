@@ -1,4 +1,3 @@
-apiserver-s390x
 build-image
 controller-manager
 controller-manager-amd64
