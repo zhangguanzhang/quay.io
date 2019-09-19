@@ -1,4 +1,3 @@
-monorepo-trigger-concourse-resource
 monorepo-webhook-proxy-server
 nginx-ingress-controller
 nginx-ingress-error-page
