@@ -1,4 +1,3 @@
-local-volume-provisioner-arm
 local-volume-provisioner-arm64
 local-volume-provisioner-bootstrap
 local-volume-provisioner-ppc64le
