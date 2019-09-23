@@ -1,7 +1,3 @@
-munnerz
-hellofresh
-kubernetes-ingress-controller
-replicated
 kubernetes-service-catalog
 3scale
 fluentd_elasticsearch
@@ -22,3 +18,7 @@ calico
 prometheus
 outline
 weaveworks
+munnerz
+hellofresh
+kubernetes-ingress-controller
+replicated
