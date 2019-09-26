@@ -1,4 +1,3 @@
-khan-ansible
 kube-apiserver
 kube-controller-manager
 kube-proxy
