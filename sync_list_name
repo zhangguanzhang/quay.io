@@ -1,4 +1,3 @@
-kube-proxy
 kubernetes-dashboard-amd64
 kube-scheduler
 kube-state-metrics
