@@ -1,4 +1,3 @@
-origin-egress-http-proxy
 origin-egress-router
 origin-elasticsearch-operator
 origin-etcd
