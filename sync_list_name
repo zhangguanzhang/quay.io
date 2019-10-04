@@ -1,4 +1,3 @@
-kube-rbac-proxy
 kubernetes-fluentd
 kube-state-metrics
 kube-version
