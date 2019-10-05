@@ -1,4 +1,3 @@
-jaeger-collector-influxdb
 jaeger-query-influxdb
 k8s-kapacitor-autoscale
 pigeon
