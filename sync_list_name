@@ -1,4 +1,3 @@
-cert-manager-cainjector-arm
 cert-manager-cainjector-arm64
 cert-manager-controller
 cert-manager-controller-arm
