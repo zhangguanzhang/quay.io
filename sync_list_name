@@ -1,4 +1,3 @@
-updateservicectl
 vault
 vault-operator
 vault-operator-dev
