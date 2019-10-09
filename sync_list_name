@@ -1,4 +1,3 @@
-elb-presence
 etcd
 etcd_discovery_purge
 etcd-git
