@@ -1,4 +1,3 @@
-mysqld-exporter-linux-amd64
 mysqld-exporter-linux-arm64
 mysqld-exporter-linux-armv7
 node-exporter
