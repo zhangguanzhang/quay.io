@@ -1,7 +1,3 @@
-jetstack
-uswitch
-factory2
-ucsc_cgl
 helmpack
 openshift
 kubernetes_incubator
@@ -22,3 +18,7 @@ influxdb
 dotmesh
 external_storage
 spinnaker
+jetstack
+uswitch
+factory2
+ucsc_cgl
