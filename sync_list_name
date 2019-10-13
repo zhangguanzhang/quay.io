@@ -1,4 +1,3 @@
-jaeger-all-in-one-influxdb
 jaeger-collector-influxdb
 jaeger-query-influxdb
 k8s-kapacitor-autoscale
