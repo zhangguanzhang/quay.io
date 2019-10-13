@@ -1,4 +1,3 @@
-jaeger-query-influxdb
 k8s-kapacitor-autoscale
 pigeon
 prometheus-operator
