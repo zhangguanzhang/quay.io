@@ -1,4 +1,3 @@
-menus-service-ci
 molecule-docker
 monorepo-trigger-concourse-resource
 monorepo-webhook-proxy-server
