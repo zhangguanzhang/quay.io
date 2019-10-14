@@ -1,4 +1,3 @@
-kitchen-base
 kitchen-build-ubuntu
 kops
 kubectl
