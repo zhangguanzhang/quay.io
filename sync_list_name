@@ -1,4 +1,3 @@
-launcher-service
 prom-aggregation-gateway
 prometheus_sql_exporter
 scope
