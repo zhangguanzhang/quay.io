@@ -1,6 +1,7 @@
-systemtap
-ubuntu-slim
-ubuntu-slim-amd64
-ubuntu-slim-arm
-ubuntu-slim-arm64
-ubuntu-slim-ppc64le
+prom-aggregation-gateway
+prometheus_sql_exporter
+scope
+sidecar
+test-exporter
+watch
+wks
