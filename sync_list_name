@@ -1,4 +1,3 @@
-origin-cluster-storage-operator
 origin-cluster-svcat-apiserver-operator
 origin-cluster-svcat-controller-manager-operator
 origin-cluster-update-keys
