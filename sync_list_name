@@ -1,4 +1,3 @@
-origin-csi-driver-registrar
 origin-csi-external-attacher
 origin-csi-external-provisioner
 origin-csi-external-snapshotter
