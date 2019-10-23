@@ -1,5 +1,3 @@
-coreos
-wire
 calico
 prometheus
 outline
@@ -22,3 +20,5 @@ ucsc_cgl
 helmpack
 openshift
 kubernetes_incubator
+coreos
+wire
