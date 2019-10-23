@@ -1,4 +1,3 @@
-origin-csi-external-provisioner
 origin-csi-external-snapshotter
 origin-csi-livenessprobe
 origin-csi-node-driver-registrar
