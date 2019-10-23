@@ -1,4 +1,3 @@
-origin-cluster-kube-apiserver-operator
 origin-cluster-kube-controller-manager-operator
 origin-cluster-kube-scheduler-operator
 origin-cluster-logging-operator
