@@ -1,0 +1,17 @@
+mbs-test
+mbs-test-centos
+mbs-test-fedora
+message-tagging-service
+modulemd-merger
+moksha-monitor-exporter
+ocp-cert-verifier
+repotracker
+resultsdb
+resultsdb-updater
+sync2jira
+sync2jira-jenkins-slave
+tightbeam-client
+tightbeam-server
+umbproxy
+waiverdb
+yamllint
