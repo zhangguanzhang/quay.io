@@ -1,3 +1,5 @@
+openshift
+kubernetes_incubator
 coreos
 wire
 calico
@@ -20,5 +22,3 @@ uswitch
 factory2
 ucsc_cgl
 helmpack
-openshift
-kubernetes_incubator
