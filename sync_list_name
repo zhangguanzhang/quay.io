@@ -1,0 +1,16 @@
+cert-manager-webhook-arm
+cert-manager-webhook-arm64
+kube-oidc-proxy
+metrics-server-amd64
+mongodb-install
+navigator-apiserver
+navigator-controller
+navigator-pilot-cassandra
+navigator-pilot-elasticsearch
+nginx-autoreload
+oauth2-proxy
+php-fpm-autoreload
+ubuntu-nsenter
+vault-helper
+vault-sidekick
+vault-unsealer
