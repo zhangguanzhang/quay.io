@@ -1,4 +1,3 @@
-clusterregistry
 configmap-reload
 container-linux-update-operator
 container-linux-update-operator-dev
