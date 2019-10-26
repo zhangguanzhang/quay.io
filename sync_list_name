@@ -1,4 +1,3 @@
-origin-presto
 origin-prometheus
 origin-prometheus-alertmanager
 origin-prometheus-config-reloader
