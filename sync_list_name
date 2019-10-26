@@ -1,4 +1,3 @@
-keepalived-cloud-provider
 kube-keepalived-vip
 kube-openvpn
 kube-plex
