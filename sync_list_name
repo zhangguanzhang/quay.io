@@ -1,4 +1,3 @@
-maven-s3cmd
 menus-service-ci
 molecule-docker
 monorepo-trigger-concourse-resource
