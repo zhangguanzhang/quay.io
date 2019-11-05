@@ -1,4 +1,3 @@
-haproxy-exporter-linux-amd64
 haproxy-exporter-linux-arm64
 haproxy-exporter-linux-armv7
 influxdb-exporter
