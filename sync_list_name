@@ -1,4 +1,3 @@
-openebs-provisioner
 rbd-provisioner
 snapshot-controller
 snapshot-provisioner
