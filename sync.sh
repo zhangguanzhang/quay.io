@@ -1,20 +1,20 @@
 #!/bin/bash
+
+[ -n "$DEBUG" ] && set -x
 max_process=$1
 MY_REPO=zhangguanzhang
+status_image_name=zhangguanzhang/quay-data
 interval=.
 : ${max_per:=70} ${push_time:=45}
 
-quay_list=sync_list/quay.loop
 #--------------------------
 
-Multi_process_init() {
-    trap 'exec 5>&-;exec 5<&-;exit 0' 2
-    pipe=`mktemp -u tmp.XXXX`
-    mkfifo $pipe
-    exec 5<>$pipe
-    rm -f $pipe
-    seq $1 >&5
-}
+google_list=/tmp/docker/quay.loop
+hub_check_time=/tmp/docker/hub_check.time
+hub_check_ns=/tmp/docker/hub_check.ns
+hub_check_name=/tmp/docker/hub_check.name
+
+[ -z "$start_time" ] && start_time=$(date +%s)
 
 git_init(){
     git config --global user.name "zhangguanzhang"
@@ -31,11 +31,37 @@ git_init(){
         git pull origin develop
     fi
 }
+git_init
+
+mkdir -p /tmp/docker
+docker run -d --rm --name data $status_image_name sleep 10
+while read file;do
+    docker cp data:/root/$file /tmp/docker/
+done < <(docker exec data ls /root/)
+
+Multi_process_init() {
+    trap 'exec 5>&-;exec 5<&-;exit 0' 2
+    pipe=`mktemp -u tmp.XXXX`
+    mkfifo $pipe
+    exec 5<>$pipe
+    rm -f $pipe
+    seq $1 >&5
+}
+
 
 git_commit(){
      local COMMIT_FILES_COUNT=$(git status -s|wc -l)
      local TODAY=$(date +%F)
      if [[ $COMMIT_FILES_COUNT -ne 0 && $(( (`date +%s` - start_time)/60 ))  -gt $push_time ]];then
+        mkdir docker
+        cp -a /tmp/docker/* docker/
+        cat>Dockerfile<<-EOF
+            FROM zhangguanzhang/alpine
+            COPY docker/* /root/
+EOF
+        rm -rf docker
+        docker build -t $status_image_name .
+        docker push $status_image_name
         git add -A
         git commit -m "Synchronizing completion at $TODAY"
         git push -u origin develop
@@ -144,28 +170,36 @@ sync_domain_repo(){
 
 
 main(){
-    [ -z "$start_time" ] && start_time=$(date +%s)
-    git_init
+
     Multi_process_init $(( max_process * 5 ))
     live_start_time=$(date +%s)
-    read sync_time < sync_check
-    [ $(( (`date +%s` - sync_time)/3600 )) -ge 6 ] && {
-        [ ! -f sync_list_ns ] && ls quay.io > sync_list_ns
-        allns=(`xargs -n1 < sync_list_ns`)
-
-        for ns in ${allns[@]};do 
-            [ ! -f sync_list_name ] && ls quay.io/$ns > sync_list_name
-            allname=(`xargs -n1 < sync_list_name`)
-            for name in ${allname[@]};do 
+    read sync_time < $hub_check_time #每隔 8个小时以dockerhub为准，清楚本地多余的文件
+    [ $(( (`date +%s` - sync_time)/3600 )) -ge 8 ] && {
+        [ ! -f "$hub_check_ns" ] && ls quay.io > "$hub_check_ns"
+        hub_ns_break_count=`wc -l $hub_check_time | cut -d " " -f1`
+        i=0
+        while read ns;do
+            [ "$i" -eq "$hub_ns_break_count" ] && break #防止循环,----之间才是loop核心
+            #-------------
+            [ ! -f "$hub_check_name" ] && ls quay.io/$ns > $hub_check_name
+            hub_name_break_count=`wc -l $hub_check_time | cut -d " " -f1`
+            j=0
+            while read name;do
+                [ "$j" -eq "$hub_name_break_count" ] && break #防止循环,----之间才是loop核心
+                #-------------
                 sync_domain_repo quay.io/$ns/$name
-                perl  -i -lne 'print if $_ ne "'$name'"' sync_list_name
-            done
-            rm -f sync_list_name
-            perl  -i -lne 'print if $_ ne "'$ns'"' sync_list_ns
-        done
-        rm -f sync_list_ns
-        date +%s > sync_check
-        git_commit
+                #-------------
+                sed -i 1d "$hub_check_name"
+                let j++
+            done < "$hub_check_name"
+            rm -f "$hub_check_name"
+            #-------------
+            sed -i 1d "$hub_check_ns"
+            let i++
+        done < "$hub_check_ns"
+        rm -f "$hub_check_ns"
+        echo the sync has done! 
+        date +%s > $hub_check_time
     }
     exec 5>&-;exec 5<&-
 
@@ -181,6 +215,15 @@ main(){
 
     COMMIT_FILES_COUNT=$(git status -s|wc -l)
     TODAY=$(date +%F)
+    mkdir docker
+    cp -a /tmp/docker/* docker/
+    cat>Dockerfile<<-EOF
+        FROM zhangguanzhang/alpine
+        COPY docker/* /root/
+EOF
+    rm -rf docker
+    docker build -t $status_image_name .
+    docker push $status_image_name
     if [ $COMMIT_FILES_COUNT -ne 0 ];then
         git add -A
         git commit -m "Synchronizing completion at $TODAY"
