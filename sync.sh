@@ -9,7 +9,7 @@ interval=.
 
 #--------------------------
 
-google_list=/tmp/docker/quay.loop
+quay_list=/tmp/docker/quay.loop
 hub_check_time=/tmp/docker/hub_check.time
 hub_check_ns=/tmp/docker/hub_check.ns
 hub_check_name=/tmp/docker/hub_check.name
@@ -205,11 +205,15 @@ main(){
 
     Multi_process_init $max_process
 
-    QUAY_NAMESPACE=(`xargs -n1 < $quay_list`)
-    for repo in ${QUAY_NAMESPACE[@]};do
+    list_loop_break_count=`wc -l $quay_list | cut -d " " -f1`
+    i=0
+    while read repo;do
+        [ "$i" -eq "$list_loop_break_count" ] && break
         image_pull quay.io/$repo quay
-        sed -i '/'"$repo"'/d' $quay_list;echo "$repo" >> $quay_list
-    done
+        sed -i 1d "$quay_list"
+        echo $repo >> "$quay_list"
+        let i++
+    done < "$quay_list"
 
     exec 5>&-;exec 5<&-
 
