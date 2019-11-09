@@ -48,20 +48,23 @@ Multi_process_init() {
     seq $1 >&5
 }
 
-
 git_commit(){
     local COMMIT_FILES_COUNT=$(git status -s|wc -l)
     local TODAY=$(date +%F)
     if [[ $(( (`date +%s` - start_time)/60 ))  -gt $push_time ]];then
-        mkdir docker
-        cp -a /tmp/docker/* docker/
-        cat>Dockerfile<<-EOF
-            FROM zhangguanzhang/alpine
-            COPY docker/* /root/
+        [ z "$docker_time" ] && docker_time=`date +%s`
+        if [[ $(( (`date +%s` - docker_time)/60 ))  -gt 2 ]];then
+            mkdir docker
+            cp -a /tmp/docker/* docker/
+            cat>Dockerfile<<-EOF
+                FROM zhangguanzhang/alpine
+                COPY docker/* /root/
 EOF
-        docker build -t $status_image_name .
-        docker push $status_image_name
-        rm -rf docker Dockerfile
+            docker build -t $status_image_name .
+            docker push $status_image_name
+            rm -rf docker Dockerfile
+            docker_time=`date +%s`
+        fi
         if [[ $COMMIT_FILES_COUNT -ne 0 ]];then
             git add -A
             git commit -m "Synchronizing completion at $TODAY"
@@ -69,7 +72,6 @@ EOF
         fi
     fi
 }
-
 
 #  GCR_IMAGE_NAME  tag  REPO_IMAGE_NAME
 image_tag(){
