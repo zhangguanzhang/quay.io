@@ -50,22 +50,24 @@ Multi_process_init() {
 
 
 git_commit(){
-     local COMMIT_FILES_COUNT=$(git status -s|wc -l)
-     local TODAY=$(date +%F)
-     if [[ $COMMIT_FILES_COUNT -ne 0 && $(( (`date +%s` - start_time)/60 ))  -gt $push_time ]];then
+    local COMMIT_FILES_COUNT=$(git status -s|wc -l)
+    local TODAY=$(date +%F)
+    if [[ $(( (`date +%s` - start_time)/60 ))  -gt $push_time ]];then
         mkdir docker
         cp -a /tmp/docker/* docker/
         cat>Dockerfile<<-EOF
             FROM zhangguanzhang/alpine
             COPY docker/* /root/
 EOF
-        rm -rf docker
+        rm -rf docker Dockerfile
         docker build -t $status_image_name .
         docker push $status_image_name
-        git add -A
-        git commit -m "Synchronizing completion at $TODAY"
-        git push -u origin develop
-     fi
+        if [[ $COMMIT_FILES_COUNT -ne 0 ]];then
+            git add -A
+            git commit -m "Synchronizing completion at $TODAY"
+            git push -u origin develop
+        fi
+    fi
 }
 
 
@@ -226,7 +228,7 @@ main(){
         FROM zhangguanzhang/alpine
         COPY docker/* /root/
 EOF
-    rm -rf docker
+    rm -rf docker Dockerfile
     docker build -t $status_image_name .
     docker push $status_image_name
     if [ $COMMIT_FILES_COUNT -ne 0 ];then
