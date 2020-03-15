@@ -1,0 +1,1 @@
+quay.io/dotmesh/jupyterlab-tensorflow:63-pin-requirements.txt
