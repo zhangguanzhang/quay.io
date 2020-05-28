@@ -1,0 +1,1 @@
+quay.io/kubernetes_incubator/node-feature-discovery:v0.6.0
