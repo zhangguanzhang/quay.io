@@ -38,6 +38,7 @@ docker run -d --rm --name data $status_image_name sleep 10
 while read file;do
     docker cp data:/root/$file /tmp/docker/
 done < <(docker exec data ls /root/)
+[ ! -f "$quay_list" ] && ls quay.io > $quay_list
 
 Multi_process_init() {
     trap 'exec 5>&-;exec 5<&-;exit 0' 2
